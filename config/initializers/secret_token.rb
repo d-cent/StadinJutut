@@ -9,4 +9,5 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-StadinJutut::Application.config.secret_key_base = '363562353dbea2ec6c8f2abd2d10880f2b7744d8f0dc7bd30347fbbb14fe8dd4b0d4971484145120abbdb0e51b4e13dc21a5aa1f80046c12a1353cf1e83f5231'
+
+StadinJutut::Application.config.secret_key_base = (Rails.env.development? or Rails.env.test?) ? (1..19).to_a.join : ENV['SECRET_KEY_BASE']
