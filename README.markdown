@@ -2,8 +2,8 @@
 
 _for keeping informed citizens informed._
 
-[![Build Status](https://travis-ci.org/d-cent/enquesta.png)](https://travis-ci.org/d-cent/enquesta)
-[![Code Climate](https://codeclimate.com/github/d-cent/enquesta.png)](https://codeclimate.com/github/d-cent/enquesta)
+[![Build Status](https://travis-ci.org/d-cent/StadinJutut.svg?branch=master)](https://travis-ci.org/d-cent/StadinJutut)
+[![Code Climate](https://codeclimate.com/github/d-cent/StadinJutut.png)](https://codeclimate.com/github/d-cent/StadinJutut)
 
 ## Get Started
 
