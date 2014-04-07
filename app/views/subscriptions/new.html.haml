@@ -1,0 +1,13 @@
+%div{role: 'subscriptions-new'}
+  = form_for @subscription do |f|
+    %ol.fields
+      %li.terms
+        = f.label :term_list, 'Keywords to follow'
+        = f.text_field :term_list
+      
+      %li.email
+        = f.label :email, 'Your email'
+        = f.email_field :email
+  
+    %ul.actions
+      %li= f.submit
