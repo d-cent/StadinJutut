@@ -2,3 +2,9 @@
   %h2= @subscription.email
   
   %p= @subscription.term_list
+  
+  %ul
+    - @meetings.each do |meeting|
+      %li
+        %strong= meeting['policymaker_name']
+        %em= meeting['date']

@@ -1,6 +1,8 @@
 class SubscriptionsController < ApplicationController
   def show
     @subscription = Subscription.find_securely(params[:id])
+    @api_response = HTTParty.get "http://dev.hel.fi/paatokset/v1/meeting/?order_by=-date"
+    @meetings = @api_response['objects']
   end
   
   def new
